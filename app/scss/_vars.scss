@@ -1,0 +1,31 @@
+
+$accent-color: #fe3e57;
+
+%qs-400{
+    font-family: Quicksand;
+    font-weight: 400;
+}
+
+%qs-500{
+    font-family: Quicksand;
+    font-weight: 500;
+}
+
+
+@function max($numbers...){
+@return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+@return m#{i}n(#{$numbers});
+}
+
+
+
+ %checkbox-hiddden,
+ %radio-hiddden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+ }

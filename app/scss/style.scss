@@ -1,0 +1,31 @@
+@import '_reset';
+@import '_vars';
+@import '_fonts';
+@import '_global';
+@import '_libs';
+@import '_media';
+
+
+
+
+
+
+.wrapper {
+	min-height: 100%;
+}
+.main {
+	flex: 1 1 auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.container{
+    max-width: 1200px;
+	margin: 0px auto;
+    padding: 0 10px;
+}
+
+
