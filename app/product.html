@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ceva description">
+    <meta name="keywords" content="ceva cuvinte cheie">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1-0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>furnitureShop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container-big"> 
+                <div class="header__inner">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="images/icons/logo.svg" alt="">
+                            <span class="logo__txt">Glee.</span>
+                        </a>
+                    </div>
+                    <menu class="nav">
+                        <ul class="nav__links-list">
+                            <li class="nav__list-item">
+                                <a class="nav__link nav__link--active" href="#">Home +</a> 
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">About</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">Services</a>  
+
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#"> Pages +</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">News</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">Contact</a>
+                            </li>     
+                        </ul> 
+                    </menu>
+                    <div class="nav__user">
+                        <label class="nav__user-label">
+                            <input class="nav__user-search" type="text"></input>
+                        </label>
+                        <div class="nav__user-box">
+                            <a class="nav__user-preff" href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                    <g><g>
+                                    <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                    </g></g>
+                                 </svg>
+                              <div class="nav__user-num"><span>0</span></div>
+                            </a>
+                            <a class="nav__user-cart" href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                    <g><g>
+                                    <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                    </g></g>
+                                </svg>
+                                <div class="nav__user-num"><span>0</span></div>
+                            </a>
+                         </div>
+                         <div class="nav__user-btn">
+                            <a class="nav__user-btn-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+                                    <g><g>
+                                    <path fill="#fff" d="M2.146 4.88A2.144 2.144 0 0 1 0 2.736C0 1.548.96.589 2.146.589c1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.87A2.145 2.145 0 0 1 0 10.603c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868A2.144 2.144 0 0 1 0 18.472c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146zM10.014 4.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.959 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.959 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.959 2.146-2.146 2.146zM17.883 4.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146z"/>
+                                    </g></g>
+                                </svg>
+                            </a>
+                         </div>
+                         <div class="nav__user-open" onclick="openNav()">
+                         </div>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <ul class="nav__links-list">
+                                <li class="nav__list-item">
+                                    <a class="nav__link nav__link--active" href="#">Home +</a> 
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">About</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">Services</a>  
+    
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#"> Pages +</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">News</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#">Contact</a>
+                                </li>     
+                            </ul> 
+                        </div>
+                      </div>   
+                </div>                
+            </div>
+        </header>
+        <main class="main">
+            <section class="top-bread__section">     
+                <div class="top-bread__inner">
+                 <h4 class="top-bread__title">Product list 1</h4> 
+                  <div class="breadcrumbs">
+                     <ul class="breadcrumbs__list">
+                         <li class="breadcrumbs__item">
+                             <a class="breadcrumbs__link" href="#" >Home</a>
+                         </li>            
+                         <li class="breadcrumbs__item">
+                             <a class="breadcrumbs__link" href="#" >Product list 1</a> 
+                         </li>
+                     </ul>
+                  </div>
+                </div>
+            </section>
+            <section class="articles">
+                <div class="articles__container-small">
+                  <div class="articles__inner">
+                    <button class="articles__filter-btn" data-fancybox data-src="#filter-block">Filter</button>
+                    <div class="articles__filters filter" id="filter-block">
+                        <div class="filter__item filter-category">
+                            <h3 class="filter__title">CATEGORY</h3>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox" checked>  
+                                    <div class="filter-category__checkbox">
+                                        <span>Chair</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                            <g><g>
+                                            <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                            </g></g>
+                                         </svg>                                   
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Table</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                            <g><g>
+                                            <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                            </g></g>
+                                         </svg>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Lamp</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                            <g><g>
+                                            <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                            </g></g>
+                                         </svg>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Watch</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                            <g><g>
+                                            <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                            </g></g>
+                                         </svg>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Clock</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                            <g><g>
+                                            <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                            </g></g>
+                                         </svg>
+                                    </div>
+                                </label>
+                            </form>
+                          </div>
+                         <div class="filter__item filter-price">
+                            <h3 class="filter__title">PRICE</h3>
+                            <form class="filter-price__form" action="#">
+                                   <input class="filter-price__input" type="text"
+                                   data-min="0"
+                                   data-max="999"
+                                   data-from="200"
+                                   data-to="800"> 
+                                   <label class="filter-price__label">
+                                          <span class="filter-price__from"></span> 
+                                          <span class="filter-price__to"></span>
+                                   </label>            
+                            </form>
+                           </div>
+                         <div class="filter__item filter-category">
+                            <h3 class="filter__title">BRAND</h3>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox" checked> 
+                                    <div class="filter-category__checkbox">
+                                        <span>RFL</span>
+                                        <span>(48)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Brothers</span>
+                                        <span>(30)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Regal</span>
+                                        <span>(92)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Nadia</span>
+                                        <span>(12)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span>Otobi</span>
+                                        <span>(52)</span>
+                                    </div>
+                                </label>
+                            </form>
+                           </div>
+                           <div class="articles__recent">
+                             <p class="articles__recent-title">RECENT PRODUCTS</p>
+                            <div class="articles__recent-item">
+                                <div class="articles__recent-img">
+                                    <img src="images/recent/recent01.png" alt="">
+                                </div>
+                                <div class="articles__recent-content">
+                                    <p class="articles__recent-txt">Pendant lamp</p>
+                                    <div class="products-star" data-rateyo-rating="3.8"></div>
+                                    <p class="articles__recent-price">23$</p>
+                                </div>
+                            </div>
+                            <div class="articles__recent-item">
+                                <div class="articles__recent-img">
+                                    <img src="images/recent/recent02.png" alt="">
+                                </div>
+                                <div class="articles__recent-content">
+                                    <p class="articles__recent-txt">Pendant lamp</p>
+                                    <div class="products-star" data-rateyo-rating="3.8"></div>
+                                    <p class="articles__recent-price">23$</p>
+                                </div>
+                            </div>
+                            <div class="articles__recent-item">
+                                <div class="articles__recent-img">
+                                    <img src="images/recent/recent03.png" alt="">
+                                </div>
+                                <div class="articles__recent-content">
+                                    <p class="articles__recent-txt">Pendant lamp</p>
+                                    <div class="products-star" data-rateyo-rating="3.8"></div>
+                                    <p class="articles__recent-price">23$</p>
+                                </div>
+                            </div>
+                           </div>
+                     </div>
+                    <div class="articles__content-inner">
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__img">
+                                <img src="images/product/product01.png" alt="">
+                            </div>
+                            <p class="products__item-title">Wooden radio</p>
+                            <p class="products__item-price">$29.00</p>
+                            <div class="products__item-overlay">
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><g><path fill="#243f4d" d="M3.702 6.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zM6.98-.004c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34zM6.98 11.201c2.742 0 4.966-2.216 4.966-4.948S9.722 1.305 6.98 1.305 2.015 3.521 2.015 6.253s2.22 4.948 4.965 4.948z"/></g></g></svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                                <a class="products__item-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                        <g><g>
+                                        <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                        </g></g>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>  
+                </div>
+            </section>
+            <section class="pagination">
+                <a class="pagination__prev" href="#">PREVIOUS</a>
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a class="pagination__link  pagination__link--active" href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">3</a>
+                    </li>
+                </ul>
+                <a class="pagination__next pagination__arrows" href="#">NEXT</a>
+              </section>   
+            <section class="blog">
+              <div class="blog__partners">
+                  <div class="blog__container-small"> 
+                    <div class="blog__partners-inner blog__partners-login">
+                        <div class="blog__img-partners"><img src="images/lopart01.png" alt=""></div>
+                        <div class="blog__img-partners"><img src="images/logpart02.png" alt=""></div>
+                        <div class="blog__img-partners"><img src="images/logopart03.png" alt=""></div>
+                        <div class="blog__img-partners"><img src="images/lopart04.png" alt=""></div>
+                        <div class="blog__img-partners"> <img src="images/_logopart05.png" alt=""></div>
+                    </div>
+                   </div>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container-small">
+                <div class="footer__top">
+                    <div class="footer__top-item">
+                        <div class="logo">
+                            <a class="logo__link" href="#">
+                                <img class="logo__img" src="images/icons/logo.svg" alt="">
+                                <span class="logo__txt">Glee.</span>
+                            </a>
+                        </div>
+                        <address class="footer__adr">
+                            ADDRESS: 4772 Wines Lane
+                            Houston, TX 77032
+                        </address>
+                        <label  class="footer__tel">                          
+                            Telephone:
+                             <a href="tel:+832-347-5843">+832-347-5843</a>
+                        </label>
+                        <label  class="footer__mail">
+                            Email:
+                            <a href="mailto:contact@Glee.com">contact@Glee.com</a>
+                        </label>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">Services</h3>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">About us</a>                     
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Return Policy</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Our Blog</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#"Contact Us></a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#"> Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">Account</h3>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Your Account</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Checkout</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">newsletter</h3>
+                        <p class="footer__txt">
+                            Subscribe by our newsletter and get
+                            update protidin.
+                        </p>
+                        <form class="footer__form" action="#">
+                            <input  class="footer__email" type="email" placeholder="Email address">
+                            <input class="footer__submit" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-rights">
+                        <p> 
+                            ©2020 CopyRight Example. All rights reserved. 
+                        </p>
+                    </div>
+                    <ul class="footer__bottom-links-list">
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#">Home</a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#"> About </a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

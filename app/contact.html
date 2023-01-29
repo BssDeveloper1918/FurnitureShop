@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ceva description">
+    <meta name="keywords" content="ceva cuvinte cheie">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1-0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/contact.min.css">
+    <title>furnitureShop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container-big"> 
+                <div class="header__inner">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="images/icons/logo.svg" alt="">
+                            <span class="logo__txt">Glee.</span>
+                        </a>
+                    </div>
+                    <menu class="nav">
+                        <ul class="nav__links-list">
+                            <li class="nav__list-item">
+                                <a class="nav__link nav__link--active" href="#">Home +</a> 
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">About</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">Services</a>  
+
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#"> Pages +</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">News</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">Contact</a>
+                            </li>     
+                        </ul> 
+                    </menu>
+                    <div class="nav__user">
+                        <label class="nav__user-label">
+                            <input class="nav__user-search" type="text"></input>
+                        </label>
+                        <div class="nav__user-box">
+                            <a class="nav__user-preff" href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                    <g><g>
+                                    <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                    </g></g>
+                                 </svg>
+                              <div class="nav__user-num"><span>0</span></div>
+                            </a>
+                            <a class="nav__user-cart" href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                    <g><g>
+                                    <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                    </g></g>
+                                </svg>
+                                <div class="nav__user-num"><span>0</span></div>
+                            </a>
+                         </div>
+                         <div class="nav__user-btn">
+                            <a class="nav__user-btn-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+                                    <g><g>
+                                    <path fill="#fff" d="M2.146 4.88A2.144 2.144 0 0 1 0 2.736C0 1.548.96.589 2.146.589c1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.87A2.145 2.145 0 0 1 0 10.603c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868A2.144 2.144 0 0 1 0 18.472c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146zM10.014 4.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.959 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.959 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.959 2.146-2.146 2.146zM17.883 4.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146z"/>
+                                    </g></g>
+                                </svg>
+                            </a>
+                         </div>
+                         <div class="nav__user-open" onclick="openNav()">
+                         </div>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <ul class="nav__links-list">
+                                <li class="nav__list-item">
+                                    <a class="nav__link nav__link--active" href="#">Home +</a> 
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">About</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">Services</a>  
+    
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#"> Pages +</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">News</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#">Contact</a>
+                                </li>     
+                            </ul> 
+                        </div>
+                      </div>   
+                </div>                
+            </div>
+        </header>
+        <main class="main">
+            <section class="top-bread__section">     
+                <div class="top-bread__inner">
+                 <h4 class="top-bread__title">Contact</h4>
+                  <div class="breadcrumbs">
+                     <ul class="breadcrumbs__list">
+                         <li class="breadcrumbs__item">
+                             <a class="breadcrumbs__link" href="#" >Home</a>
+                         </li>
+                     
+                         <li class="breadcrumbs__item">
+                             <a class="breadcrumbs__link" href="#" >Contact</a>
+                         </li>
+                     </ul>
+                  </div>
+                </div>
+            </section>
+             <section class="contact">
+               <div class="contact__container-small">
+                <a class="contact__link" href="#">Write Here</a>
+                <h4 class="contact__title">Get In Touch</h4>
+                <div class="contact__top">
+                    <div class="contact__item">
+                        <div class="contact__img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="44" viewBox="0 0 31 44">
+                                <g><g>
+                                <path fill="#a3bbc8" d="M14.597 43.81l-6.584-2.918-5.674 2.51a1.652 1.652 0 0 1-1.864-.355c-.49-.5-.613-1.23-.313-1.862l4.994-10.516a1.107 1.107 0 0 1 1.986-.023c.165.332.148.707-.014 1.01L2.785 40.8l4.32-1.914a2.227 2.227 0 0 1 1.806.001l6.583 2.916h.011l6.585-2.917a2.222 2.222 0 0 1 1.804 0l4.32 1.914-4.342-9.145a1.093 1.093 0 0 1 .174-1.275 1.107 1.107 0 0 1 1.798.288l4.994 10.518c.3.63.177 1.36-.313 1.86-.49.501-1.222.641-1.863.356l-5.665-2.51-6.594 2.917a2.22 2.22 0 0 1-1.806 0zm-1.947-7.6L3.102 20.283A13.891 13.891 0 0 1 1.54 13.81c.023-3.642 1.464-7.083 4.06-9.689a13.903 13.903 0 0 1 9.702-4.12 13.897 13.897 0 0 1 9.999 4 13.76 13.76 0 0 1 4.158 9.893 13.691 13.691 0 0 1-1.562 6.39L18.349 36.21a3.293 3.293 0 0 1-2.849 1.61 3.294 3.294 0 0 1-2.85-1.61zm2.683-34.012C8.983 2.285 3.785 7.5 3.747 13.823a11.525 11.525 0 0 0 1.269 5.366l9.53 15.896c.29.487.764.54.954.54.19 0 .663-.053.955-.54l9.528-15.896a11.526 11.526 0 0 0 1.27-5.295 11.59 11.59 0 0 0-3.501-8.33 11.694 11.694 0 0 0-8.42-3.366zm-4.884 11.697c0-2.773 2.266-5.027 5.051-5.027s5.05 2.254 5.05 5.027c0 2.772-2.265 5.026-5.05 5.026-2.785 0-5.05-2.254-5.05-5.026zm2.206 0a2.842 2.842 0 0 0 2.845 2.83 2.84 2.84 0 0 0 2.844-2.83 2.84 2.84 0 0 0-2.844-2.831 2.841 2.841 0 0 0-2.845 2.83z"/>
+                                </g></g>
+                            </svg>
+                        </div>
+                        <p class="contact__item-title">
+                            Address
+                        </p>
+                        <address class="contact__address">
+                            2416 Mapleview Drive <br>
+                            Tampa, FL 33634
+                        </address>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="35" viewBox="0 0 37 35">
+                                <g><g>
+                                <path fill="#a3bbc8" d="M.975 34.918a.958.958 0 0 1-.67-.272.93.93 0 0 1-.277-.659L0 13.786v-.017a.927.927 0 0 1 .41-.754L5.73 9.4V5.56a.94.94 0 0 1 .949-.932h6.067l5.217-3.546a.96.96 0 0 1 1.079.001l5.185 3.545h6.093a.94.94 0 0 1 .947.932v3.882l5.297 3.621c.19.13.316.315.373.519.021.046.034.13.034.184l.028 20.17a.94.94 0 0 1-.946.933l-35.077.048zm2.773-1.867l29.478-.041-14.712-11.224zm-1.828-.965l11.443-8.73-11.466-7.793zm21.72-8.748L35.1 32.082l-.023-16.565zM7.626 17.19l7.308 4.968 3-2.288a.96.96 0 0 1 1.16 0l2.977 2.272 7.301-4.993V6.493H7.626zm-5.013-3.408l3.118 2.12v-4.24zm28.654 2.072l3.028-2.07-3.028-2.07zM16.08 4.629h4.828L18.5 2.984zm-3.994 12.303a.94.94 0 0 1-.948-.933.94.94 0 0 1 .948-.932h12.83a.94.94 0 0 1 .946.932.94.94 0 0 1-.946.933zm0-4.847a.94.94 0 0 1-.948-.932.94.94 0 0 1 .948-.932h12.83a.94.94 0 0 1 .946.932.94.94 0 0 1-.946.932z"/>
+                                </g></g>
+                                </svg>
+                        </div>
+                        <p class="contact__item-title">
+                            Our Email
+                        </p>
+                        <div  class="contact__mail">    
+                            <span> Main Email:</span>
+                            <a href="mailto:contact@website.com">contact@website.com</a>
+                        </div>
+                        <div  class="contact__mail">
+                            <span>Email:</span>
+                            <a href="mailto:Info@mail.com">Info@mail.com</a>
+                        </div> 
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="45" viewBox="0 0 37 45">
+                                <g><g>
+                                <path fill="#a3bbc8" d="M13.44 39.922c0-2.754 2.27-4.995 5.06-4.995 2.79 0 5.06 2.241 5.06 4.995 0 2.755-2.27 4.995-5.06 4.995-2.79 0-5.06-2.24-5.06-4.995zm1.975 0c0 1.68 1.384 3.045 3.084 3.045 1.701 0 3.086-1.366 3.086-3.045 0-1.679-1.385-3.045-3.086-3.045-1.7 0-3.084 1.366-3.084 3.045zM26.88 28.586c0-2.755 2.27-4.995 5.06-4.995 2.789 0 5.059 2.24 5.059 4.995 0 2.754-2.27 4.995-5.06 4.995-2.79 0-5.059-2.241-5.059-4.995zm1.976 0c0 1.68 1.383 3.046 3.084 3.046 1.7 0 3.084-1.367 3.084-3.046 0-1.68-1.384-3.046-3.084-3.046-1.701 0-3.084 1.367-3.084 3.046zm-15.417 0c0-2.755 2.27-4.995 5.06-4.995 2.79 0 5.06 2.24 5.06 4.995 0 2.754-2.27 4.995-5.06 4.995-2.79 0-5.06-2.241-5.06-4.995zm1.975 0c0 1.68 1.384 3.046 3.084 3.046 1.701 0 3.086-1.367 3.086-3.046 0-1.68-1.385-3.046-3.086-3.046-1.7 0-3.084 1.367-3.084 3.046zM0 28.586c0-2.755 2.27-4.995 5.059-4.995 2.79 0 5.06 2.24 5.06 4.995 0 2.754-2.27 4.995-5.06 4.995-2.79 0-5.06-2.241-5.06-4.995zm1.974 0c0 1.68 1.384 3.046 3.085 3.046 1.7 0 3.084-1.367 3.084-3.046 0-1.68-1.383-3.046-3.084-3.046s-3.085 1.367-3.085 3.046zm24.907-11.337c0-2.754 2.27-4.995 5.06-4.995 2.789 0 5.059 2.241 5.059 4.995 0 2.755-2.27 4.995-5.06 4.995-2.79 0-5.059-2.24-5.059-4.995zm1.976 0c0 1.68 1.383 3.045 3.084 3.045 1.7 0 3.084-1.365 3.084-3.045 0-1.679-1.384-3.045-3.084-3.045-1.701 0-3.084 1.366-3.084 3.045zm-15.417 0c0-2.754 2.27-4.995 5.06-4.995 2.79 0 5.06 2.241 5.06 4.995 0 2.755-2.27 4.995-5.06 4.995-2.79 0-5.06-2.24-5.06-4.995zm1.975 0c0 1.68 1.384 3.045 3.084 3.045 1.701 0 3.086-1.365 3.086-3.045 0-1.679-1.385-3.045-3.086-3.045-1.7 0-3.084 1.366-3.084 3.045zM0 17.249c0-2.754 2.27-4.995 5.059-4.995 2.79 0 5.06 2.241 5.06 4.995 0 2.755-2.27 4.995-5.06 4.995-2.79 0-5.06-2.24-5.06-4.995zm1.974 0c0 1.68 1.384 3.045 3.085 3.045 1.7 0 3.084-1.365 3.084-3.045 0-1.679-1.383-3.045-3.084-3.045s-3.085 1.366-3.085 3.045zM26.881 5.913c0-2.755 2.27-4.995 5.06-4.995C34.73.918 37 3.158 37 5.913c0 2.754-2.27 4.995-5.06 4.995-2.79 0-5.059-2.24-5.059-4.995zm1.976 0c0 1.68 1.383 3.046 3.084 3.046 1.7 0 3.084-1.367 3.084-3.046 0-1.68-1.384-3.046-3.084-3.046-1.701 0-3.084 1.367-3.084 3.046zm-15.417 0c0-2.755 2.27-4.995 5.06-4.995 2.79 0 5.06 2.24 5.06 4.995 0 2.754-2.27 4.995-5.06 4.995-2.79 0-5.06-2.24-5.06-4.995zm1.975 0c0 1.68 1.384 3.046 3.084 3.046 1.701 0 3.086-1.367 3.086-3.046 0-1.68-1.385-3.046-3.086-3.046-1.7 0-3.084 1.367-3.084 3.046zM0 5.913C0 3.158 2.27.918 5.059.918c2.79 0 5.06 2.24 5.06 4.995 0 2.754-2.27 4.995-5.06 4.995-2.79 0-5.06-2.24-5.06-4.995zm1.974 0c0 1.68 1.384 3.046 3.085 3.046 1.7 0 3.084-1.367 3.084-3.046 0-1.68-1.383-3.046-3.084-3.046S1.974 4.234 1.974 5.913z"/>
+                                </g></g>
+                                </svg>
+                        </div>
+                        <p class="contact__item-title">
+                            Our Phone
+                        </p>
+                        <div  class="contact__tel">                            
+                            <span>Office Telephone:</span>   
+                             <a href="tel:0029129102320">0029129102320</a>
+                        </div>
+                        <div  class="contact__tel">                          
+                            <span>Mobile:</span>
+                             <a href="tel:000 2324 39493">000 2324 39493</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__bottom">
+                    <form class="contact__form" action="#">
+                         <label class="contact__label">
+                            <input class="contact__form-name" type="text" placeholder="NAME">
+                            <input class="contact__form-mail" type="text" placeholder=" EMAIL">
+                         </label>
+                         <textarea class="contact__massage" placeholder="MESSAGE"></textarea>
+                         <button class="contact__sent-btn">SEND MESSAGE</button>
+                    </form>
+                    <div class="contact__map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+              </div>
+             </section>
+            <section class="blog">
+              <div class="blog__container-small">
+                <div class="blog__box">
+                    <h3 class="blog__title">Our Insights & Articles</h3>
+                    <a class="blog__link-all" href="#">
+                        <span>View All</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                            <g><g>
+                            <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                            </g></g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="blog__inner">
+                    <div class="blog__item">
+                        <div class="blog__img">
+                            <img src="images/blog01.jpg">
+                            <div class="blog__news"><span>NEWS</span></div>
+                        </div>
+                        <p class="blog__txt">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <div class="blog__item-info">
+                            <p class="blog__item-data">28 JANUARY, 2020</p>
+                            <p class="blog__item-admin">BY ADMIN</p>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__img">
+                            <img src="images/blog02.jpg">
+                            <div class="blog__news"><span>NEWS</span></div>
+                        </div>
+                        <p class="blog__txt">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <div class="blog__item-info">
+                            <p class="blog__item-data">28 JANUARY, 2020</p>
+                            <p class="blog__item-admin">BY ADMIN</p>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__img">
+                            <img src="images/blog03.jpg">
+                            <div class="blog__news"><span>NEWS</span></div>
+                        </div>
+                        <p class="blog__txt">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                        <div class="blog__item-info">
+                            <p class="blog__item-data">28 JANUARY, 2020</p>
+                            <p class="blog__item-admin">BY ADMIN</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="blog__partners">
+                  <div class="blog__container-small"> 
+                    <div class="blog__partners-inner">
+                        <div class="blog__img-partners"><img src="images/lopart01.png" alt=""></div>
+                        <div class="blog__img-partners"><img src="images/logpart02.png" alt=""></div>
+                        <div class="blog__img-partners"><img src="images/logopart03.png" alt=""></div>
+                        <div class="blog__img-partners"><img src="images/lopart04.png" alt=""></div>
+                        <div class="blog__img-partners"> <img src="images/_logopart05.png" alt=""></div>
+                    </div>
+                   </div>
+                </div> 
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container-small">
+                <div class="footer__top">
+                    <div class="footer__top-item">
+                        <div class="logo">
+                            <a class="logo__link" href="#">
+                                <img class="logo__img" src="images/icons/logo.svg" alt="">
+                                <span class="logo__txt">Glee.</span>
+                            </a>
+                        </div>
+                        <address class="footer__adr">
+                            ADDRESS: 4772 Wines Lane
+                            Houston, TX 77032
+                        </address>
+                        <label  class="footer__tel">                          
+                            Telephone:
+                             <a href="tel:+832-347-5843">+832-347-5843</a>
+                        </label>
+                        <label  class="footer__mail">
+                            Email:
+                            <a href="mailto:contact@Glee.com">contact@Glee.com</a>
+                        </label>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">Services</h3>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">About us</a>                     
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Return Policy</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Our Blog</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#"Contact Us></a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#"> Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">Account</h3>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Your Account</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Checkout</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">newsletter</h3>
+                        <p class="footer__txt">
+                            Subscribe by our newsletter and get
+                            update protidin.
+                        </p>
+                        <form class="footer__form" action="#">
+                            <input  class="footer__email" type="email" placeholder="Email address">
+                            <input class="footer__submit" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-rights">
+                        <p> 
+                            ©2020 CopyRight Example. All rights reserved. 
+                        </p>
+                    </div>
+                    <ul class="footer__bottom-links-list">
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#">Home</a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#"> About </a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+ <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
+ <script>
+  //Map 40.71172438857224, -73.98932982902635
+  let map;
+  function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 40.71172438857224, lng: -73.98932982902635 },
+    zoom: 13,
+    });
+   }
+ </script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
