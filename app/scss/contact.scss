@@ -1,0 +1,197 @@
+//use strict
+
+.contact{
+    padding-top: 120px;
+    &__container-small{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    &__link{
+        display: block;
+        margin: 0 auto;
+        color: #a3bbc8;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: center;
+    }
+    &__title{
+        color: #436372;
+        font-family: "DM Sans";
+        font-size: 35px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 57px;
+        text-align: center;
+    }
+    &__top{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(383px, 400px);
+        column-gap: 30px;
+        padding: 75px 0px 120px 0px;
+    }
+    &__item{
+        background-color: #fbfbfb;
+
+    }
+    &__img{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin: 0 auto;
+        box-shadow: 0 6px 57px rgba(37, 37, 37, 0.05);
+        background-color: #ffffff;
+        transition: all 0.4s;
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover{
+            background-color: #a3bbc8;
+            svg{
+                path{
+                    fill: #ffffff;
+                }
+            }
+        }
+     }
+    &__item-title{
+        padding: 65px 0px 28px 0px;
+        color: #222222;
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 26px;
+        text-align: center;
+    }
+    &__address{
+        color: #565872;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__mail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #565872;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: left;  
+        a{
+            color: #565872;
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left; 
+        }   
+    }
+    &__tel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #565872;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: left;  
+        a{
+            color: #565872;
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left; 
+        } 
+    }
+    &__bottom{
+        display: flex;
+    }
+    &__form{
+        max-width: 620px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;  
+        margin-right: 60px;
+    }
+    &__label{
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form-name{
+        width: 300px;
+        height: 50px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        background-image: url(../images/icons/userContact.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%; 
+    }
+    &__form-mail{
+        width: 300px;
+        height: 51px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        background-image: url(../images/icons/emailContct.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%; 
+    }
+    &__massage{
+        width: 620px;
+        height: 175px;
+        background-color: #f5f5f5;
+        padding: 20px;
+        background-image: url(../images/icons/message.svg);
+        background-repeat: no-repeat;
+        background-position: 98% 5%; 
+        margin-bottom: 30px;
+    }
+    &__sent-btn{
+        width: 200px;
+        border-radius: 5px;
+        padding: 19px 0;
+        background-color: #a3bbc8;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: "Poppins - Semi Bold";
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+
+#map{
+   width: 500px;
+   height: 334px;
+}
