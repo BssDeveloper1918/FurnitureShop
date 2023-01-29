@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ceva description">
+    <meta name="keywords" content="ceva cuvinte cheie">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1-0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/blog-article.min.css">
+    <title>furnitureShop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container-big"> 
+                <div class="header__inner">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="images/icons/logo.svg" alt="">
+                            <span class="logo__txt">Glee.</span>
+                        </a>
+                    </div>
+                    <menu class="nav">
+                        <ul class="nav__links-list">
+                            <li class="nav__list-item">
+                                <a class="nav__link nav__link--active" href="#">Home +</a> 
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">About</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">Services</a>  
+
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#"> Pages +</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">News</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link " href="#">Contact</a>
+                            </li>     
+                        </ul> 
+                    </menu>
+                    <div class="nav__user">
+                        <label class="nav__user-label">
+                            <input class="nav__user-search" type="text"></input>
+                        </label>
+                        <div class="nav__user-box">
+                            <a class="nav__user-preff" href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                                    <g><g>
+                                    <path fill="#243f4d" d="M8.913 16.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76C.074 2.779 2.19.722 4.801.722c1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM4.8 2.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/>
+                                    </g></g>
+                                 </svg>
+                              <div class="nav__user-num"><span>0</span></div>
+                            </a>
+                            <a class="nav__user-cart" href="#" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17">
+                                    <g><g>
+                                    <path fill="#243f4d" d="M5.526 16.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.798.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L4.108 5.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H4.29A4.354 4.354 0 0 1 .007.68.591.591 0 1 1 1.178.505a3.165 3.165 0 0 0 3.115 2.682h14.07a.591.591 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H5.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z"/>
+                                    </g></g>
+                                </svg>
+                                <div class="nav__user-num"><span>0</span></div>
+                            </a>
+                         </div>
+                         <div class="nav__user-btn">
+                            <a class="nav__user-btn-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+                                    <g><g>
+                                    <path fill="#fff" d="M2.146 4.88A2.144 2.144 0 0 1 0 2.736C0 1.548.96.589 2.146.589c1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.87A2.145 2.145 0 0 1 0 10.603c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868A2.144 2.144 0 0 1 0 18.472c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146zM10.014 4.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.959 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.959 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.959 2.146-2.146 2.146zM17.883 4.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146z"/>
+                                    </g></g>
+                                </svg>
+                            </a>
+                         </div>
+                         <div class="nav__user-open" onclick="openNav()">
+                         </div>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <ul class="nav__links-list">
+                                <li class="nav__list-item">
+                                    <a class="nav__link nav__link--active" href="#">Home +</a> 
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">About</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">Services</a>  
+    
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#"> Pages +</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link " href="#">News</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#">Contact</a>
+                                </li>     
+                            </ul> 
+                        </div>
+                      </div>   
+                </div>                
+            </div>
+         </header>
+        <main class="main">
+            <section class="top-bread__section">     
+                <div class="top-bread__inner">
+                 <h4 class="top-bread__title">Blog Details</h4>
+                  <div class="breadcrumbs">
+                     <ul class="breadcrumbs__list">
+                         <li class="breadcrumbs__item">
+                             <a class="breadcrumbs__link" href="#" >Home</a>
+                         </li> 
+                         <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#" >Blog</a> 
+                        </li>                   
+                         <li class="breadcrumbs__item">
+                             <a class="breadcrumbs__link" href="#" >Blog Details</a> 
+                         </li>
+                     </ul>
+                  </div>
+                </div>
+             </section>
+              <section class="blogone">
+                 <div class="blogone__container-small">
+                    <div class="blogone__content-inner">
+                        <div class="blogone__articles">
+                            <div class="blogone__article-item">
+                                <div class="blogone__article-img">
+                                    <img src="images/blogImg.jpg" alt="img">
+                                    <div class="blogone__article-info">
+                                        <div class="blogone__article-data">28 JANUARY, 2020</div>
+                                        <div class="blogone__article-admin">BY ADMIN</div>
+                                    </div>
+                                </div>
+                                  <p class="blogone__article-title">
+                                    Fonsectetur adipisicing  eiusmod 
+                                  </p>
+                                  <p class="blogone__article-subtitle">
+                                    Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                  </p>
+                                  <p class="blogone__article-text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                  </p>
+                                  <p class="blogone__article-subtxt">
+                                    Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                    <span>Wiusmod tempor</span>
+                                </p>
+                                <div class="blogone__box-inner">
+                                    <div class="blogone__box-img">
+                                        <img src="images//imgBox.jpg" alt="img">
+                                    </div>
+                                    <div class="blogone__box-txt">
+                                        <p class="blogone__box-title">
+                                            Riusmod tempor incididunt 
+                                        </p>
+                                        <p class="blogone__box-subtitle">
+                                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="blogone__article-subtitle">
+                                    Kajtsal jervcm eoaspckred
+                                </p> 
+                                 <p class="blogone__article-text">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                 </p>
+                                 <div class="blogone__author">
+                                    <div class="blogone__author-box">
+                                        <img src="images/author.jpg" alt="img">
+                                         <div class="blogone__author-txt">
+                                            <h3>Mark N. Hernandez</h3>
+                                            <p>Designer</p>
+                                         </div>
+                                    </div>
+                                    <div class="blogone__author-info">
+                                        <div class="blogone__author-tags">         
+                                            <span>Tags:</span>
+                                            <a href="#">All,</a>
+                                            <a href="#">Trending</a>
+                                        </div>
+                                        <div class="blogone__author-social">
+                                            <span>Share:</span>
+                                            <ul class="blogone__author-list">
+                                                <li class="blogone__author-item">
+                                                    <a class="blogone__author-link" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16">
+                                                            <g><g>
+                                                            <path fill="#a1a1a1" d="M6.19.125c.413 0 .828.022 1.24.04.268.011.537.05.789.077l-.02 2.485h-.197c-.272 0-.545-.003-.818-.003-.204 0-.409.001-.613.008-.659.022-1.144.27-1.177 1.092-.021.592-.036 1.9-.037 1.97l1.34.001c.327 0 .647 0 .87-.002H8.1c-.133.955-.255 1.87-.388 2.792H5.357l-.053 6.971h-2.89l.053-6.982H.103l.021-2.776H2.5l.002-.208c.004-.56-.003-1.119.018-1.678.008-.351.027-.713.09-1.065.16-.85.555-1.563 1.267-2.073C4.499.33 5.208.144 5.96.127c.076-.002.153-.002.23-.002z"/>
+                                                            </g></g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="blogone__author-item">
+                                                    <a class="blogone__author-link" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+                                                            <g><g><path fill="#a1a1a1" d="M14.69 2.277c-.105.16-.21.307-.332.45a5.57 5.57 0 0 1-1.072 1.015l-.05.093c.013.433-.007.867-.065 1.3a8.717 8.717 0 0 1-2.374 4.92 7.9 7.9 0 0 1-4.049 2.249 9.02 9.02 0 0 1-1.9.196A8.216 8.216 0 0 1 .43 11.234l-.07-.043c.232.024.461.037.689.037.775 0 1.52-.145 2.248-.438.501-.208.964-.472 1.4-.817-1.52-.05-2.465-1.147-2.71-2.035.181.035.363.052.544.052.237 0 .474-.03.712-.085l.044-.022c-.827-.192-1.46-.631-1.894-1.344a2.856 2.856 0 0 1-.42-1.558c.414.22.841.34 1.302.351-.617-.444-1.029-1.031-1.193-1.777a2.887 2.887 0 0 1 .334-2.123c1.57 1.87 3.57 2.897 6.021 3.066-.015-.12-.03-.219-.047-.323-.077-.69.07-1.333.448-1.914.472-.735 1.14-1.19 1.996-1.328.182-.03.36-.045.533-.045.768 0 1.446.294 2.028.863.036.032.067.05.108.05a.175.175 0 0 0 .045-.007 5.783 5.783 0 0 0 1.71-.652l.04-.022c-.214.68-.64 1.206-1.247 1.596a5.667 5.667 0 0 0 1.638-.439z"/>
+                                                            </g></g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="blogone__author-item">
+                                                    <a class="blogone__author-link" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                                            <g><g>
+                                                            <path fill="#a1a1a1" d="M3.34 13.461c-1.55-.4-2.473-1.41-2.72-2.978C.438 9.331.419 3.978.75 2.815 1.184 1.3 2.195.412 3.727.16 4.42.046 5.779.006 7.15.006c1.275 0 2.56.035 3.335.077.938.05 1.797.351 2.493 1.02.665.637 1.005 1.432 1.09 2.332.102 1.074.168 6.154-.148 7.344-.424 1.558-1.44 2.48-3.016 2.732-.59.095-2.18.152-3.768.152-1.626 0-3.25-.06-3.796-.202zm.729-12.117c-1.191.138-1.992.873-2.183 2.058-.195 1.255-.193 5.951-.047 6.895.152.981.707 1.656 1.686 1.93.53.149 2.118.202 3.674.202 1.433 0 2.84-.045 3.368-.103 1.203-.132 1.998-.872 2.188-2.068.196-1.201.196-5.584.084-6.708-.122-1.202-.857-1.991-2.045-2.178-.589-.089-2.006-.129-3.416-.129-1.36 0-2.714.037-3.31.101zm-.25 5.491a3.53 3.53 0 0 1 3.531-3.5 3.471 3.471 0 0 1 3.473 3.506 3.535 3.535 0 0 1-3.531 3.5 3.468 3.468 0 0 1-3.474-3.506zm1.234-.022A2.245 2.245 0 0 0 7.279 9.1h.02c1.242 0 2.264-.999 2.285-2.243A2.242 2.242 0 0 0 7.357 4.57h-.02c-1.241 0-2.264 1-2.284 2.243zM10.171 3.2a.821.821 0 0 1 .819-.817H11c.45 0 .814.367.81.822a.828.828 0 0 1-.828.817.816.816 0 0 1-.811-.822z"/>
+                                                            </g></g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="blogone__author-item">
+                                                    <a class="blogone__author-link" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12">
+                                                            <g><g>
+                                                            <path fill="#a1a1a1" d="M6.267 11.727c-1.118-.066-2.135-.417-3.036-1.08C2.07 9.79 1.338 8.65 1.031 7.24a5.157 5.157 0 0 1-.11-1.535 5.59 5.59 0 0 1 1.287-3.259A5.652 5.652 0 0 1 5.278.494c.313-.083.626-.132.944-.149.181-.005.363-.016.544-.016a5.36 5.36 0 0 1 2.698.74c.557.319.873.642 1.01.74-.57.56-1.117 1.109-1.675 1.657-.415-.357-.873-.685-1.667-.806a3.436 3.436 0 0 0-.487-.036c-1.594 0-2.93 1.153-3.285 2.663-.085.34-.11.686-.08 1.032a3.414 3.414 0 0 0 2.331 2.967 3.303 3.303 0 0 0 1.233.143c.599-.039 1.159-.198 1.666-.532.855-.582 1.13-1.492 1.133-1.717H6.588l.016-2.2.006-.093h5.364c.29 1.673.03 3.433-1.013 4.81-.72.95-1.679 1.547-2.822 1.844a6.144 6.144 0 0 1-1.872.186zm9.086-3.22v-.055l.015-1.93h-1.99v-.06l.01-1.443.001-.055h1.991l.015-1.937v-.054h1.558v.055l-.015 1.936h1.991v.055l-.011 1.442-.001.06h-1.99l-.016 1.931v.055z"/>
+                                                            </g></g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="blogone__comments">
+                                  <div class="blogone__comments-top">
+                                    <span>3</span>
+                                     Comments
+                                  </div>
+                                  <div class="blogone__comment">
+                                       <img class="blogone__comment-img" src="images/comentImg.jpg" alt="img"> 
+                                       <div class="blogone__comment-content">
+                                        <div class="blogone__comment-author">
+                                            <p>Delores G. Roberts</p>
+                                            <span>Add 11 Oct 2020</span>
+                                        </div>
+                                        <p class="blogone__comment-txt">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta natus delectus hic nisi veniam? Dolorum voluptatum totam sequi quisquam exercitationem repudiandae? Recusandae nulla ab molestiae repellat labore quibusdam! Debitis.
+                                        </p>
+                                        <a class="blogone__comment-link" href="#">
+                                            <span>Reply</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8">
+                                                <g><g>
+                                                <path fill="#8d8d8d" d="M9.836 3.624L6.226.152a.555.555 0 0 0-.386-.155.555.555 0 0 0-.387.155l-.327.315a.521.521 0 0 0 0 .749l2.105 2.03H.541a.523.523 0 0 0-.54.517v.447c0 .29.239.54.54.54h6.714l-2.13 2.042a.504.504 0 0 0 0 .739l.328.314c.103.1.24.153.387.153a.554.554 0 0 0 .387-.154l3.61-3.472a.514.514 0 0 0 0-.747"/>
+                                                </g></g>
+                                            </svg>
+                                        </a>
+                                       </div>
+                                  </div>
+                                  <div class="blogone__comment">
+                                    <img class="blogone__comment-img" src="images/comentImg.jpg" alt="img"> 
+                                    <div class="blogone__comment-content">
+                                     <div class="blogone__comment-author">
+                                         <p> Delores G. Roberts</p>
+                                         <span>Add 11 Oct 2020</span>
+                                     </div>
+                                     <p class="blogone__comment-txt">
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta natus delectus hic nisi veniam? Dolorum voluptatum totam sequi quisquam exercitationem repudiandae? Recusandae nulla ab molestiae repellat labore quibusdam! Debitis.
+                                     </p>
+                                     <a class="blogone__comment-link" href="#">
+                                         <span>Reply</span>
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8">
+                                             <g><g>
+                                             <path fill="#8d8d8d" d="M9.836 3.624L6.226.152a.555.555 0 0 0-.386-.155.555.555 0 0 0-.387.155l-.327.315a.521.521 0 0 0 0 .749l2.105 2.03H.541a.523.523 0 0 0-.54.517v.447c0 .29.239.54.54.54h6.714l-2.13 2.042a.504.504 0 0 0 0 .739l.328.314c.103.1.24.153.387.153a.554.554 0 0 0 .387-.154l3.61-3.472a.514.514 0 0 0 0-.747"/>
+                                             </g></g>
+                                         </svg>
+                                     </a>
+                                    </div>
+                               </div>
+                               <div class="blogone__comment">
+                                <img class="blogone__comment-img" src="images/comentImg.jpg" alt="img"> 
+                                <div class="blogone__comment-content">
+                                 <div class="blogone__comment-author">
+                                    <p> Delores G. Roberts</p>
+                                     <span>Add 11 Oct 2020</span>
+                                 </div>
+                                 <p class="blogone__comment-txt">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta natus delectus hic nisi veniam? Dolorum voluptatum totam sequi quisquam exercitationem repudiandae? Recusandae nulla ab molestiae repellat labore quibusdam! Debitis.
+                                 </p>
+                                 <a class="blogone__comment-link" href="#">
+                                     <span>Reply</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8">
+                                         <g><g>
+                                         <path fill="#8d8d8d" d="M9.836 3.624L6.226.152a.555.555 0 0 0-.386-.155.555.555 0 0 0-.387.155l-.327.315a.521.521 0 0 0 0 .749l2.105 2.03H.541a.523.523 0 0 0-.54.517v.447c0 .29.239.54.54.54h6.714l-2.13 2.042a.504.504 0 0 0 0 .739l.328.314c.103.1.24.153.387.153a.554.554 0 0 0 .387-.154l3.61-3.472a.514.514 0 0 0 0-.747"/>
+                                         </g></g>
+                                     </svg>
+                                 </a>
+                                </div>
+                               </div>
+                              <div class="blogone__comment">
+                            <img class="blogone__comment-img" src="images/comentImg.jpg" alt="img"> 
+                            <div class="blogone__comment-content">
+                             <div class="blogone__comment-author">
+                                <p> Delores G. Roberts</p>
+                                 <span>Add 11 Oct 2020</span>
+                             </div>
+                             <p class="blogone__comment-txt">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta natus delectus hic nisi veniam? Dolorum voluptatum totam sequi quisquam exercitationem repudiandae? Recusandae nulla ab molestiae repellat labore quibusdam! Debitis.
+                             </p>
+                             <a class="blogone__comment-link" href="#">
+                                 <span>Reply</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8">
+                                     <g><g>
+                                     <path fill="#8d8d8d" d="M9.836 3.624L6.226.152a.555.555 0 0 0-.386-.155.555.555 0 0 0-.387.155l-.327.315a.521.521 0 0 0 0 .749l2.105 2.03H.541a.523.523 0 0 0-.54.517v.447c0 .29.239.54.54.54h6.714l-2.13 2.042a.504.504 0 0 0 0 .739l.328.314c.103.1.24.153.387.153a.554.554 0 0 0 .387-.154l3.61-3.472a.514.514 0 0 0 0-.747"/>
+                                     </g></g>
+                                 </svg>
+                             </a>
+                            </div>
+                               </div>
+                            </div>
+                            <div class="blogone__post-comment">
+                                <p class="blogone__post-title">Leave A Comment</p>
+                                <form class="blogone__post-form" action="#">
+                                     <label class="blogone__post-label">
+                                        <input class="blogone__post-name" type="text" placeholder="Name">
+                                        <input class="blogone__post-email" type="email" placeholder="youremail@gmail.com">
+                                     </label>
+                                     <textarea class="blogone__post-textarea" placeholder="Comment"></textarea>
+                                     <button class="blogone__post-submit">Post Comment</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="blogone__filters">
+                            <form class="blogone__search" action="#">
+                                   <input class="blogone__input-txt" type="text">  
+                                   <input class="blogone__input-submit" type="submit">  
+                            </form>
+                            <div class="filter__item filter-category">
+                                <h3 class="filter__title">CATEGORY</h3>
+                                <form class="filter-category__form" action="#">
+                                    <label class="filter-category__label">
+                                        <input class="filter-category__input" type="checkbox" checked>  
+                                        <div class="filter-category__checkbox">
+                                            <span>Chair</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                                <g><g>
+                                                <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                                </g></g>
+                                             </svg>                                   
+                                        </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                        <input class="filter-category__input" type="checkbox">
+                                        <div class="filter-category__checkbox">
+                                            <span>Table</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                                <g><g>
+                                                <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                                </g></g>
+                                             </svg>
+                                        </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                        <input class="filter-category__input" type="checkbox">
+                                        <div class="filter-category__checkbox">
+                                            <span>Lamp</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                                <g><g>
+                                                <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                                </g></g>
+                                             </svg>
+                                        </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                        <input class="filter-category__input" type="checkbox">
+                                        <div class="filter-category__checkbox">
+                                            <span>Watch</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                                <g><g>
+                                                <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                                </g></g>
+                                             </svg>
+                                        </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                        <input class="filter-category__input" type="checkbox">
+                                        <div class="filter-category__checkbox">
+                                            <span>Clock</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+                                                <g><g>
+                                                <path fill="#262626" d="M1.333 11.687c-.15 0-.3-.061-.41-.183a.6.6 0 0 1 .021-.831l4.547-4.475L.944 1.724a.596.596 0 0 1-.177-.427c0-.145.052-.29.155-.404a.551.551 0 0 1 .8-.023L6.7 5.768l.014.014a.563.563 0 0 1 .113.169h.001a.61.61 0 0 1 .052.244v.003c0 .086-.018.17-.053.25v.001a.602.602 0 0 1-.112.165l-.015.014-4.977 4.899a.55.55 0 0 1-.39.16z"/>
+                                                </g></g>
+                                             </svg>
+                                        </div>
+                                    </label>
+                                </form>
+                              </div>
+                            <div class="blogone__recent-posts">
+                                <h3 class="filter__title">Recent Posts</h3>
+                                 <div class="blogone__recent-post">
+                                    <div class="blogone__recent-img">
+                                        <img src="images/recdntImg.jpg" alt="img">
+                                    </div>
+                                    <div class="blogone__recent-content">
+                                        <p class="blogone__recent-txt">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </p>
+                                        <p class="blogone__recent-data">
+                                            28 JANUARY, 2020
+                                        </p>
+                                    </div>
+                                 </div>
+                                 <div class="blogone__recent-post">
+                                    <div class="blogone__recent-img">
+                                        <img src="images/recdntImg.jpg" alt="img">
+                                    </div>
+                                    <div class="blogone__recent-content">
+                                        <p class="blogone__recent-txt">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </p>
+                                        <p class="blogone__recent-data">
+                                            28 JANUARY, 2020
+                                        </p>
+                                    </div>
+                                 </div>
+                                 <div class="blogone__recent-post">
+                                    <div class="blogone__recent-img">
+                                        <img src="images/recdntImg.jpg" alt="img">
+                                    </div>
+                                    <div class="blogone__recent-content">
+                                        <p class="blogone__recent-txt">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </p>
+                                        <p class="blogone__recent-data">
+                                            28 JANUARY, 2020
+                                        </p>
+                                    </div>
+                                 </div>
+                                 <div class="blogone__recent-post">
+                                    <div class="blogone__recent-img">
+                                        <img src="images/recdntImg.jpg" alt="img">
+                                    </div>
+                                    <div class="blogone__recent-content">
+                                        <p class="blogone__recent-txt">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </p>
+                                        <p class="blogone__recent-data">
+                                            28 JANUARY, 2020
+                                        </p>
+                                    </div>
+                                 </div>
+                            </div>  
+                        </div>
+                    </div>
+                 </div>
+              </section>
+            <section class="blog__partners">
+                <div class="blog__container-small"> 
+                    <div class="blog__partners-inner blogone__partners-inner">
+                      <div class="blog__img-partners"><img src="images/lopart01.png" alt=""></div>
+                      <div class="blog__img-partners"><img src="images/logpart02.png" alt=""></div>
+                      <div class="blog__img-partners"><img src="images/logopart03.png" alt=""></div>
+                      <div class="blog__img-partners"><img src="images/lopart04.png" alt=""></div>
+                      <div class="blog__img-partners"> <img src="images/_logopart05.png" alt=""></div>
+                      </div>
+                 </div>
+              </section> 
+        </main>
+        <footer class="footer">
+            <div class="footer__container-small">
+                <div class="footer__top">
+                    <div class="footer__top-item">
+                        <div class="logo">
+                            <a class="logo__link" href="#">
+                                <img class="logo__img" src="images/icons/logo.svg" alt="">
+                                <span class="logo__txt">Glee.</span>
+                            </a>
+                        </div>
+                        <address class="footer__adr">
+                            ADDRESS: 4772 Wines Lane
+                            Houston, TX 77032
+                        </address>
+                        <label  class="footer__tel">                          
+                            Telephone:
+                             <a href="tel:+832-347-5843">+832-347-5843</a>
+                        </label>
+                        <label  class="footer__mail">
+                            Email:
+                            <a href="mailto:contact@Glee.com">contact@Glee.com</a>
+                        </label>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">Services</h3>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">About us</a>                     
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Return Policy</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Our Blog</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#"Contact Us></a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#"> Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">Account</h3>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Your Account</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Checkout</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                            <li class="footer__links-item">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-item">
+                        <h3 class="footer__title">newsletter</h3>
+                        <p class="footer__txt">
+                            Subscribe by our newsletter and get
+                            update protidin.
+                        </p>
+                        <form class="footer__form" action="#">
+                            <input  class="footer__email" type="email" placeholder="Email address">
+                            <input class="footer__submit" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-rights">
+                        <p> 
+                            ©2020 CopyRight Example. All rights reserved. 
+                        </p>
+                    </div>
+                    <ul class="footer__bottom-links-list">
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#">Home</a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#"> About </a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__bottom-item">                      
+                            <a class="footer__bottom-link" href="#"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
