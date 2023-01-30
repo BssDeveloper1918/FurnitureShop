@@ -8,14 +8,25 @@
     &__content-inner{
         display: flex;
     }
+    &__filters{
+        @media(max-width: 1200px){
+            display: none;
+        }
+    }
     &__articles{
         margin-right: 70px;
+        @media(max-width: 1200px){
+            margin-right: 0px;
+        }
     }
     &__article-item{
         max-width: 830px;
         width: 100%;
         height: fit-content;
         margin-bottom: 40px;
+        @media(max-width: 1200px){
+            max-width: 100%;
+        }
     }
     &__article-img{
         position: relative;
@@ -36,6 +47,9 @@
         align-items: center;
         padding: 30px;
         background-color: #a3bbc8;
+        @media(max-width: 600px){
+            padding: 10px 5px;
+        }
 
     }
     &__article-data{
@@ -94,12 +108,14 @@
         font-weight: 400;
         font-style: normal;
         letter-spacing: normal;
-        line-height: 26.43px;
+        line-height: 29.43px;
         text-align: left;
     }
     &__article-txt{
+        display: block;
+        width: 100%;
+        min-height: fit-content;
         margin-bottom: 35px;
-        height: 75px;
         color: #243f4d;
         font-family: Rubik;
         font-size: 16px;

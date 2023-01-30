@@ -14,12 +14,23 @@
       grid-template-columns: repeat(3, 1fr);
       column-gap: 30px;
       row-gap: 40px;
+      @media (max-width: 1200px){
+        min-width: 100%;
+        justify-items: center;
+      }
+      @media (max-width: 950px){
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 650px){
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
     &__filters{
         margin-right: 30px;
     }   
 }
 .filter{
+
     &__item{
         max-width: 270px;
         width: 100%;
@@ -50,7 +61,30 @@
         background-color: #a3bbc8;
        }
     }
+    @media (max-width: 1200px){
+        display: none;
+    }
 }
+
+.articles__filter-btn{
+      display: none;
+      position: fixed;
+      right: 10px;
+      z-index: 5;
+      bottom: 50px;
+      cursor: pointer;
+      background-color: #a3bbc8;
+      color: #ECECEC;
+      font-family: Quicksand;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px;
+      @media (max-width: 1200px){
+       display: block;
+      }
+      
+}
+
 .articles{
     &__recent-title{ 
         position: relative;
